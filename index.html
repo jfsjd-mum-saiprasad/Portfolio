@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sai Portfolio</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	 <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!----header design--->
+	<header>
+		<a href="#" class="logo">Cod<span>e</span>r.</a>
+			
+
+		<ul class="navlist">
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+
+		<div class="" id="menu-icon">
+			
+			
+
+			
+		</div>
+	</header>
+
+	<!----home section design--->
+	<section class="home" id="home">
+		<div class="home-text">
+			<div class="slide">
+				<span class="one">Hello</span>
+				<span class="two">I'm</span>
+			</div>
+			<h1>Sai Prasad</h1>
+			<h3>Full stack <span> developer.</span></h3>
+			<p>Up skiling My self as Full stack Developer with   <br>Generation india and Vinsys</p>
+			<div class="button">
+				<a href="#" class="btn">Say Hello</a>
+				<a href="#" class="btn2"><span><i class='bx bx-play'></i></span>Watch My Work</a>
+			</div>
+		</div>
+	</section>
+
+	<!----about section design--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="./img/Bg-sai.jpeg">
+		</div>
+
+		<div class="about-text">
+			<h2>About <span>Me</span></h2>
+			<h4>Full StackDeveloper</h4>
+			<p>I am an enthusiastic, self-motivated, reliable,
+				responsible and hard working person. I am a mature
+				team worker and adaptable to all challenging
+				situations. I am able to work well both in a team
+				environment as well as using own initiative. I am able
+				to work well under pressure and adhere to strict
+				deadlines.</p>
+			<a href="#" class="btn">More About</a>
+		</div>
+	</section>
+
+	<!----service section design--->
+	<section class="services" id="services">
+		<div class="main-text">
+			<p>What I am Expert In</p>
+			<h2><span>My</span> Services</h2>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-mobile-alt' ></i>
+				</div>
+				<h3>Web Design</h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-code-alt' ></i>
+				</div>
+				<h3>Web Development</h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-edit-alt' ></i>
+				</div>
+				<h3>Creative Design</h3>
+				<p>One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+		</div>
+	</section>
+
+	<!----portfolio section design--->
+	
+
+	<!----contact section design--->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact <span>Me!</span></h2>
+			<h4>If You Have Any Project In Your Mind.</h4>
+			<p>I'm a Web Developer - creating bold & brave interactive interface design for companies all across the world.</p>
+			<div class="list">
+				<li><a href="#">7569663469</a></li>
+				<li><a href="#">saisehwag0@gmai.com</a></li>
+				<li><a href="#">Like Share & Subscribe</a></li>
+			</div>
+
+			<div class="contact-icons">
+				<a href="#"><i class='bx bxl-facebook' ></i></a>
+				<a href="#"><i class='bx bxl-twitter' ></i></a>
+				<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+				<a href="#"><i class='bx bxl-youtube' ></i></a>
+				<a href="#"><i class='bx bxl-github'></i></a>
+				
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<form action="" onsubmit="sendEmail(); reset(); return false">
+				<input type="name" placeholder="Your Name" required id="Name">
+				<input type="email" placeholder="Your Email Address" required  id="email">
+				<input type="" placeholder="Your Mobile Number" required id="Num">
+				<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+				<input type="submit" value="Send Message" class="submit" required>
+			</form>
+		</div>
+	</section>
+
+	<!----end section design--->
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2022 by Sai Prasad All Rights Reserved.</p>
+		</div>
+
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
+	</section>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+	function sendEmail() {
+					Email.send({
+				Host : "smtp.gmail.com",
+				Username : "saisehwag0@gmail.com",
+				Password : "password",
+				To : 'saisehwag35@gmail,com',
+				From : document.getElementById('email').value
+				Subject : "Thank you for connencting",
+				Body : "Name: " + document.getElementById('Name').value 
+				+ "<br> Email:" + document.getElementById('email').value
+				+ "<br> Mobile num:" + document.getElementById('Num').value
+			}).then(
+  message => alert('Message sent sucsesfully')
+);
+
+	}
+</script>
+	<!---custom js link--->
+	<script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>
